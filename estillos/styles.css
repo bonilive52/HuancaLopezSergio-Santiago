@@ -1,0 +1,40 @@
+.contenedor {
+    padding: 5px;
+    background-color: rgb(7, 173, 250);
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas:"header header"
+                        "nav    nav"
+                        "contenido ads"
+                        "footer footer";
+}
+.contenedor .header {
+    background-color: rgb(255, 255, 255);
+    grid-area: header;
+}
+
+.contenedor .nav {
+    background-color: rgb(255, 255, 255);
+    grid-area: nav;
+}
+
+.contenedor .nav .titulo {
+    padding: 5px;
+    background-color: rgb(226, 48, 17);
+    grid-area: nav;
+}
+
+.contenedor .contenido {
+    background-color: rgb(229, 255, 0);
+    grid-area: contenido;
+}
+
+.contenedor .ads {
+    background-color: rgb(6, 240, 38);
+    grid-area: ads;
+}
+
+.contenedor .footer {
+    background-color: aquamarine;
+    grid-area: footer;
+}
